@@ -556,12 +556,6 @@ ajaxpa.prototype = {
 
         var tbar = [
                 {text: acs_lang_text.collection || 'Add a collection of photos to this album' , icon: '/resources/ajaxhelper/icons/add.png', cls : 'x-btn-text-icon', handler:function() {
-                    // var currentTreenode = Ext.getCmp('pa-nav').getSelectionModel().getSelectedNode();
-
-                    // open new window to upload applet
-                    // var newWin = window.open("/ajaxpa/java-upload/applet?album_id="+currentTreenode.id+"&package_id="+this.config.package_id,'ddUpload','width=300,height=280,status=0,location=0,toolbar=0,resizable=0');
-                    // newWin.screenX=screen.width-300;
-                    // newWin.screenY=screen.height-200;
 
                     if(!this.checkPerms('write')) {
                         Ext.MessageBox.alert('Permission Denied','Sorry you do not have permission to perform this action.')
