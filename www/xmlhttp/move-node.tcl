@@ -57,7 +57,7 @@ db_transaction {
 } on_error {
 
     set success "false"
-    set msg "Sorry, an error occured."
+    set msg "Sorry, an error occurred."
 
 }
 
