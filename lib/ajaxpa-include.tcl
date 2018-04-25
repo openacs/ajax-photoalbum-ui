@@ -16,7 +16,7 @@ if { ![exists_and_not_null theme] } {
 if { [exists_and_not_null package_id] } {
 
     set user_id [ad_conn user_id]
-    set options [list]
+    set options {}
     set rootfolder_id [pa_get_root_folder $package_id]
     set instance_name [db_string "get_folder_name" "select name as instance_name from fs_folders where folder_id = :rootfolder_id"]
 
